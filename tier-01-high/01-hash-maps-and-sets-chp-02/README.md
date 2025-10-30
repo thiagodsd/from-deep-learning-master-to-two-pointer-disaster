@@ -14,7 +14,7 @@ the way to avoid $O(n^2)$ nested loops is to use hash maps and sets for $O(1)$ l
 # ❌ DON'T: nested loop
 for i in range(len(arr)):
     for j in range(len(arr)):
-        if arr[i] + arr[j] == target:  # O(n²)
+        if arr[i] + arr[j] == target:  # O(n**2)
 ```
 
 ## the correct pattern
