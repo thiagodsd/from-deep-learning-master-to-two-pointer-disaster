@@ -1,17 +1,9 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-#
-# Complete the 'getMax' function below.
-#
-# The function is expected to return an INTEGER_ARRAY.
-# The function accepts STRING_ARRAY operations as parameter.
-#
 
 def getMax(operations):
     """
@@ -37,6 +29,7 @@ def getMax(operations):
         elif op_type == '3':
             result.append(max_stack[-1])
     return result 
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')

@@ -1,43 +1,10 @@
-#!/bin/python3
-
 import math
 import os
 import random
 import re
 import sys
 
-# Complete the minimumSwaps function below.
-# def minimumSwaps(arr):
-#     """
-#     psychological support
-#     [2 3 4 1 5]
-#     i,v
-#     {
-#         v: (v-1,i),
-#         1: (0, 3) -> {0:3}       
-#         2: (1, 0) -> {1:{0:3}}
-#         3: (2, 1) -> {1:{2}}
-#         4: (3, 2), x
-#         5: (4, 4)
-#     }
-#     """
-#     not_check = set(arr)
-#     while not_check:
-#         swap_candidate = list()
-#         swap_operation = list()
-#         for index, value in enumerate(arr):
-#             if index == (value-1):
-#                 not_check.remove(value)
-#             elif (index not in swap_candidate) or (value-1 not in swap_candidate):
-#                 op = [index, value-1]
-#                 swap_candidate.extend(op)
-#                 swap_operation.append(op)
-#         for index, value in swap_operation:
-#             arr[index] = value+1
-#             arr[value] = index+1
-#     return arr
-    
-    
+
 def minimumSwaps(arr:list) -> int:
     swaps = int()
     checked = [False] * len(arr)
